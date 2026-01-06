@@ -112,6 +112,20 @@ margin-top: 10px;
 
 }
 
+.lista-miniatur{
+    flex-direction: column;
+    order: 0;
+    margin-left: 20px;
+}
+
+.element-listy{
+    max-width: 260px;
+}
+
+.element-listy + .element-listy {
+    margin-top: 20px;
+}
+
 .glowny-tytul{
     flex: 0 1 auto;
 }
@@ -120,4 +134,11 @@ margin-top: 10px;
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
+}
+
+@media all and (min-width: 768px) {
+    .glowna-tresc{
+        flex-direction: row;
+        overflow: hidden;
+    }
 }
