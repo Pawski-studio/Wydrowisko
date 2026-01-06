@@ -1,0 +1,123 @@
+/* @font-face {
+    font-family: 'jezioro';
+    src: url('czcionki/Libre_Baskerville/static/LibreBaskerville-BoldItalic.ttf');
+    src: url('czcionki/Libre_Baskerville/static/LibreBaskerville-BoldItalic.ttf') format('embedded-opentype'),
+         url('czcionki/LibreBaskerville-VariableFont_wght') format('woff');
+} */
+
+.comic-relief-regular {
+  font-family: "Comic Relief", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.comic-relief-bold {
+  font-family: "Comic Relief", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+html, body{
+    height: 100%;   
+}
+
+
+body {
+    /* font-size: 16px; */
+    background: rgb(149, 194, 215);
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+.obraz-miniatury {
+    width: 100%;
+    display: block;
+}
+.tytuł-miniatury {
+    display: block;
+    margin: 0;
+    padding: 4px 10px;
+    background: rgb(96, 125, 139);
+    color: rgb(202, 238, 255);
+    font-size: 22px;
+}
+
+.kontener-duzego-obrazu{
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ramka-duzego-obrazu{
+    position: relative;
+    text-align: center;
+}
+
+.element-listy {
+    /* display: block ; */
+    display: inline-block;
+    min-width: 120px;
+    max-width: 120 px;
+    border: 1px solid rgb(100%, 100%, 100%);
+    border: 1px solid rgba(100%, 100%, 100%, 0.8);
+    background: blue;
+}
+
+.lista-miniatur {
+    flex: 0 1 auto;
+    order: 2;
+display: flex;
+justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.tekst-logo {
+    background: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 37px;
+    font-family: "Comic Relief", system-ui;
+}
+
+/* .element-listy + .element-listy {
+margin-top: 10px;
+} */
+
+#wydra-maurycy {
+    background: green;
+}
+
+.duzy-obraz {
+    width: 90%;
+}
+
+.tytul-duzego-obrazu{
+    position: absolute;
+    bottom: -16px;
+    left: 4px;
+    color: white;
+    font-size: 35px;
+    font-family: "Comic Relief", system-ui;
+    text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 9px;
+
+}
+
+.glowny-tytul{
+    flex: 0 1 auto;
+}
+
+.glowna-tresc{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
